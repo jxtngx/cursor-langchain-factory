@@ -1,0 +1,42 @@
+# Harness knobs — the factory parameters.
+# Harbor trials and LangSmith experiments override these via
+# LangGraph configurable / env. Do not hardcode them in tools.
+
+schema_version: 1
+
+language: unset   # python | typescript  — set by @init-agent
+
+prompt:
+  id: default
+  path: harness/prompts/system.md
+  # Harbor can point at another file: harness/prompts/strict.md
+
+model:
+  # Overridden by Harbor --model when present
+  id: openai:gpt-4.1-mini
+  temperature: 0
+
+tools:
+  - id: lookup_spec
+    enabled: true
+  - id: echo
+    enabled: true
+
+middleware:
+  - id: trace
+    enabled: true
+    notes: LangSmith always-on in factory default
+  - id: tool_error
+    enabled: true
+  - id: max_iterations
+    enabled: true
+    value: 8
+
+checkpointer:
+  kind: memory   # memory | sqlite | postgres
+  thread_required: true
+
+eval:
+  langsmith_dataset: agent-factory-smoke
+  harbor_agent: langgraph
+  harbor_plugin: langsmith

@@ -1,0 +1,15 @@
+---
+description: Plans must gather requirements before implementation
+alwaysApply: true
+---
+
+# Planning Requirements
+
+Before implementing any plan, gather these from the user (or from the approved spec):
+
+1. **User Story**: As a [role], I want [feature] so that [benefit]
+2. **Definition of Done**: measurable acceptance criteria
+3. **Constraints**: language lock, LangChain-only, HITL, no secrets
+4. **Goal End State**: what success looks like (including LangSmith / Harbor)
+
+If `.cursor/plans/project-init/*-technical-requirements.plan.md` exists and is approved, use it. Do not re-interview unless it is silent on the ticket.

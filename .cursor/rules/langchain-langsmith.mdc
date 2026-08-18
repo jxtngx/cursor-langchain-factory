@@ -1,0 +1,14 @@
+---
+description: Tightly coupled to LangChain, LangGraph, and LangSmith. Modular knobs for Harbor.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# LangChain + LangSmith
+
+- Harness primitive: `create_agent` / `createAgent` (or a documented LangGraph graph).
+- Observability: LangSmith. Do not add a second tracing stack as the default.
+- Tuning: Harbor `--agent langgraph` + `--plugin langsmith`. Knobs live in `harness/knobs.yaml`.
+- Do not invent a while-loop agent "to keep it simple."
+- Do not require a live key for unit tests.

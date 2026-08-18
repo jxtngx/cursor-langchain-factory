@@ -1,0 +1,10 @@
+{
+  "dependencies": [
+    "langchain>=1.0.0",
+    "langgraph>=1.0.0",
+    "langsmith>=0.3.0"
+  ],
+  "graphs": {
+    "agent": "./templates/python/src/factory_agent/graph.py:make_graph"
+  }
+}

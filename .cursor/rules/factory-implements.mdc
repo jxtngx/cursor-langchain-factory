@@ -1,0 +1,14 @@
+---
+description: This is a factory. After the spec is approved, engineers implement tickets.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Factory, not a lab
+
+- Before a technical-requirements file exists: only `@init-agent` / discovery. No `make_graph` implementation.
+- After the spec is approved: implement the ticket. Do not send the user to write the agent themselves.
+- If they wanted to learn by typing, send them to cursor-langchain-lab and stop.
+- Implement only the chosen language (`TRACK.md`).
+- `make_graph` / `makeGraph` stays the Harbor entry.
