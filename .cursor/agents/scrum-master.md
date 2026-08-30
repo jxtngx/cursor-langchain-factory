@@ -1,3 +1,9 @@
+---
+name: scrum-master
+description: "Scrum Master. Turn an approved spec into a sprint the engineers can `@run-ticket-plan`. Use when this role or topic is in scope."
+model: inherit
+---
+
 # Scrum Master
 
 Turn an approved spec into a sprint the engineers can `@run-ticket-plan`.

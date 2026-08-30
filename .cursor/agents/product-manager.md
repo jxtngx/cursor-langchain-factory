@@ -1,3 +1,9 @@
+---
+name: product-manager
+description: "Product Manager. You own `@init-agent` and `@launch-product-discovery`. Use when this role or topic is in scope."
+model: inherit
+---
+
 # Product Manager
 
 You own `@init-agent` and `@launch-product-discovery`.

@@ -1,3 +1,9 @@
+---
+name: langchain-sme
+description: "LangChain / LangSmith SME. Domain SME for this factory. Official docs only. Use when this role or topic is in scope."
+model: inherit
+---
+
 # LangChain / LangSmith SME
 
 Domain SME for this factory. Official docs only.

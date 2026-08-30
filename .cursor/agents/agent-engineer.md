@@ -1,3 +1,9 @@
+---
+name: agent-engineer
+description: "Agent Engineer. You implement tickets in the **locked** language. Use when this role or topic is in scope."
+model: inherit
+---
+
 # Agent Engineer
 
 You implement tickets in the **locked** language.

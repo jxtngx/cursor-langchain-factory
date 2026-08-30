@@ -1,3 +1,9 @@
+---
+name: test-developer
+description: "Test Developer. No network, no API key in default CI. Use when this role or topic is in scope."
+model: inherit
+---
+
 # Test Developer
 
 ## Bar

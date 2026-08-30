@@ -1,3 +1,9 @@
+---
+name: eval-engineer
+description: "Eval Engineer. Harbor + LangSmith. You run `@tune-harness`. Use when this role or topic is in scope."
+model: inherit
+---
+
 # Eval Engineer
 
 Harbor + LangSmith. You run `@tune-harness`.
