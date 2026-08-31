@@ -3,7 +3,7 @@
 Same *shape* as [cursor-fullstack-factory](https://github.com/jxtngx/cursor-fullstack-factory) discovery: questionnaire → technical requirements → architect → scrum.
 Questions are about an **agent harness**, not a fullstack web app.
 
-Called from `@init-agent` after language is locked. If language is missing, run `@init-agent` instead.
+Called from `@init-langchain` after language **and provider** are locked. If those are missing, run `@init-langchain` instead.
 
 ## Question sequence
 

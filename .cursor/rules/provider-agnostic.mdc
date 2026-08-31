@@ -1,0 +1,14 @@
+---
+description: Chat model is provider-agnostic. init_chat_model. No hardcoded vendor.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Provider agnostic
+
+- Load `model.provider` and `model.id` from `harness/knobs.yaml` or Harbor configurable.
+- Python: `init_chat_model`. TypeScript: `initChatModel`.
+- Do not import `ChatOpenAI` as the only path unless init locked `openai`.
+- Do not default to OpenAI or Grok if provider is `unset` — stop and ask.
+- Grok + Cursor SDK as two clients is [cursor-grok-factory](https://github.com/jxtngx/cursor-grok-factory).

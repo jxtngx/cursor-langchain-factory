@@ -7,6 +7,8 @@ Write to `.cursor/plans/project-init/[slug]-technical-requirements.plan.md`.
 name: [Agent name]
 overview: [One sentence]
 language: [python | typescript]
+model_provider: [openai | anthropic | google | xai | ollama | other]
+model_id: [init_chat_model string]
 problem_statement: [Why an agent]
 loop: [create_agent | supervisor | deep_agent]
 github_repo: [owner/repo]
@@ -40,6 +42,7 @@ As a [operator], I want [agent behavior] so that [benefit].
 ## Language
 
 - **Locked**: python | typescript
+- **Provider**: openai | anthropic | google | xai | ollama | other (`init_chat_model`)
 - **Packages**: langchain, langgraph, langsmith (JS twins if typescript)
 - **Entry**: `make_graph` / `makeGraph` for Harbor `--agent langgraph`
 

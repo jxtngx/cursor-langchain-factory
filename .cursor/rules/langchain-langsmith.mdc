@@ -10,5 +10,6 @@ alwaysApply: true
 - Harness primitive: `create_agent` / `createAgent` (or a documented LangGraph graph).
 - Observability: LangSmith. Do not add a second tracing stack as the default.
 - Tuning: Harbor `--agent langgraph` + `--plugin langsmith`. Knobs live in `harness/knobs.yaml`.
+- Chat model: `init_chat_model` / `initChatModel` from knobs. No hardcoded vendor.
 - Do not invent a while-loop agent "to keep it simple."
 - Do not require a live key for unit tests.

@@ -1,19 +1,19 @@
-# Harness knobs — the factory parameters.
-# Harbor trials and LangSmith experiments override these via
-# LangGraph configurable / env. Do not hardcode them in tools.
+# Harness knobs. Harbor / LangSmith override via configurable / env.
+# @init-langchain sets language and model.provider / model.id.
+# Do not hardcode a vendor in make_graph.
 
 schema_version: 1
 
-language: unset   # python | typescript  — set by @init-agent
+language: unset   # python | typescript
 
 prompt:
   id: default
   path: harness/prompts/system.md
-  # Harbor can point at another file: harness/prompts/strict.md
 
 model:
-  # Overridden by Harbor --model when present
-  id: openai:gpt-4.1-mini
+  # init_chat_model / initChatModel — provider-agnostic
+  provider: unset   # openai | anthropic | google | xai | ollama | other
+  id: unset         # e.g. anthropic:claude-sonnet-4-5
   temperature: 0
 
 tools:
@@ -25,7 +25,7 @@ tools:
 middleware:
   - id: trace
     enabled: true
-    notes: LangSmith always-on in factory default
+    notes: LangSmith always-on
   - id: tool_error
     enabled: true
   - id: max_iterations
@@ -37,6 +37,6 @@ checkpointer:
   thread_required: true
 
 eval:
-  langsmith_dataset: agent-factory-smoke
+  langsmith_dataset: langchain-factory-smoke
   harbor_agent: langgraph
   harbor_plugin: langsmith

@@ -19,10 +19,12 @@ Domain SME for this factory. Official docs only.
 
 ## Do
 
-- Name the current official symbol (`create_agent` vs older AgentExecutor — never the latter)
+- Name the current official symbol (`create_agent`, `init_chat_model`)
+- Keep the chat model provider-agnostic unless init locked a vendor
 - Specify how Harbor should load `langgraph.json`
 - Define the LangSmith dataset shape for evals
 - Review knobs.yaml for things that cannot be swept
+- If they want Cursor SDK beside Grok, send them to cursor-grok-factory
 
 ## Do not
 

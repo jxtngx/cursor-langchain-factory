@@ -36,6 +36,6 @@ def make_graph(config: dict[str, Any] | None = None):
     configurable = (config or {}).get("configurable") or {}
     _ = configurable.get("model")
     raise NotImplementedError(
-        "make_graph: implement after @init-agent spec is approved "
-        "(create_agent + knobs + LangSmith)."
+        "make_graph: implement after @init-langchain spec is approved "
+        "(create_agent + init_chat_model from knobs + LangSmith)."
     )
