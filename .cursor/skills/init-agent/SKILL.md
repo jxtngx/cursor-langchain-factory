@@ -1,3 +1,9 @@
+---
+name: init-agent
+description: Init Agent
+disable-model-invocation: true
+---
+
 # Init Agent
 
 Alias. Run [init-langchain.md](init-langchain.md) in full.

@@ -1,3 +1,9 @@
+---
+name: init-langchain
+description: Init LangChain (factory)
+disable-model-invocation: true
+---
+
 # Init LangChain (factory)
 
 Start a **new LangChain agent product**. Provider-agnostic.

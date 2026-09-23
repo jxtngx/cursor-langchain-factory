@@ -1,3 +1,9 @@
+---
+name: run-ticket-plan
+description: Run Ticket Plan
+disable-model-invocation: true
+---
+
 # Run Ticket Plan
 
 Implement the **next** ticket from the current sprint plan.

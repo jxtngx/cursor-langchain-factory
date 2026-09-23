@@ -1,3 +1,9 @@
+---
+name: tune-harness
+description: Tune Harness
+disable-model-invocation: true
+---
+
 # Tune Harness
 
 Sweep **prompt / tools / middleware** via Harbor + LangSmith.

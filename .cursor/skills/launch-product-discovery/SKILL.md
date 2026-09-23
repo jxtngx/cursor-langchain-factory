@@ -1,3 +1,9 @@
+---
+name: launch-product-discovery
+description: Launch Product Discovery (agent factory)
+disable-model-invocation: true
+---
+
 # Launch Product Discovery (agent factory)
 
 Same *shape* as [cursor-fullstack-factory](https://github.com/jxtngx/cursor-fullstack-factory) discovery: questionnaire → technical requirements → architect → scrum.
