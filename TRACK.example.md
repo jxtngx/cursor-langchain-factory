@@ -12,4 +12,4 @@ or
 typescript
 ```
 
-This factory does not emit `both`. Use cursor-langchain-lab if you want to learn both.
+This factory does not emit `both`. One language per product.

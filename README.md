@@ -1,18 +1,14 @@
 # Cursor LangChain Factory
 
-A **factory**, not a lab.
+A **factory**.
 
 Pure **LangChain** product boilerplate. Model **provider-agnostic**.
 Cursor's team implements from a spec you write in the first session.
 
-If you want to *learn* LangChain by typing every loop, use
-[cursor-langchain-lab](https://github.com/jxtngx/cursor-langchain-lab).
-
 If you want **Grok + Cursor SDK** (paired clients, not LangChain-as-the-spine),
 use [cursor-grok-factory](https://github.com/jxtngx/cursor-grok-factory).
 
-> **Lab** = student writes the code. Mentors quiz and review.
-> **Factory** = you define requirements. Chief Architect, SME, Scrum, and engineers ship tickets.
+You define requirements. Chief Architect, SME, Scrum, and engineers ship tickets.
 
 This factory is tightly coupled to **LangChain** (`create_agent` / `createAgent`),
 **LangGraph**, and **LangSmith**. It is **not** coupled to OpenAI, Anthropic, xAI, or anyone else.
@@ -88,7 +84,6 @@ spec  →  harness/knobs.yaml  →  make_graph(config)  →  LangGraph app
 
 | Repo | Kind |
 | --- | --- |
-| [cursor-langchain-lab](https://github.com/jxtngx/cursor-langchain-lab) | Lab — you write the agent |
 | [cursor-grok-factory](https://github.com/jxtngx/cursor-grok-factory) | Factory — Grok + Cursor SDK |
 | [cursor-fullstack-factory](https://github.com/jxtngx/cursor-fullstack-factory) | Factory — fullstack |
 | [cursor-deep-learning-factory](https://github.com/jxtngx/cursor-deep-learning-factory) | Factory — PyTorch / HF |

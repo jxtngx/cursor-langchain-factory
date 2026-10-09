@@ -33,7 +33,7 @@ questions:
         label: TypeScript (createAgent, @langchain/langgraph, langsmith)
 ```
 
-If they say both, refuse. Point at [cursor-langchain-lab](https://github.com/jxtngx/cursor-langchain-lab).
+If they say both, refuse. One product, one language.
 
 ## 1. Model provider (required, no default)
 
@@ -90,4 +90,4 @@ Then @langchain-sme. Then @scrum-master.
 - Scaffold a second language
 - Replace LangChain with a while-loop
 - Call a live model
-- Pretend this is a lab
+- Send the user to write the agent themselves

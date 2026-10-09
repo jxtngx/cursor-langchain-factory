@@ -5,10 +5,9 @@ globs:
 alwaysApply: true
 ---
 
-# Factory, not a lab
+# Factory
 
 - Before a technical-requirements file exists: only `@init-langchain` / `@init-agent` / discovery. No `make_graph` implementation.
 - After the spec is approved: implement the ticket. Do not send the user to write the agent themselves.
-- If they wanted to learn by typing, send them to cursor-langchain-lab and stop.
 - Implement only the chosen language (`TRACK.md`).
 - `make_graph` / `makeGraph` stays the Harbor entry.

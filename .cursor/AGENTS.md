@@ -1,10 +1,9 @@
 # AGENTS.md — Cursor LangChain Factory
 
-This repository is a **factory**, not a lab.
+This repository is a **factory**.
 Renamed from cursor-agent-factory.
 
-> **Lab** = [cursor-langchain-lab](https://github.com/jxtngx/cursor-langchain-lab)
-> **Factory** = this repo. Spec then tickets.
+You define requirements. This team ships tickets.
 
 ## Stack
 
